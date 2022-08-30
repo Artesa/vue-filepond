@@ -149,7 +149,7 @@
 
         var options = events.reduce(function (obj, value) {
           obj[value] = function () {
-            _this2.$emit("input", _this2._pond ? _this2._pond.getFiles() : []);
+            _this2.$emit("update:files", _this2._pond ? _this2._pond.getFiles() : []);
 
             for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
               args[_key] = arguments[_key];
